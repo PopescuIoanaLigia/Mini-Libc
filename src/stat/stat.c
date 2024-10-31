@@ -8,7 +8,7 @@
 int stat(const char *restrict path, struct stat *restrict buf)
 {
 	/* TODO: Implement stat(). */
-	int rez = syscall( __NR_stat, path, buf );
+	int rez = syscall(__NR_stat, path, buf);
 	if( rez < 0 )
 	{
 		errno = -rez;

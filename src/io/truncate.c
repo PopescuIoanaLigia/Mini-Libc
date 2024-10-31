@@ -7,7 +7,7 @@
 int truncate(const char *path, off_t length)
 {
 	/* TODO: Implement truncate(). */
-	int rez = syscall( __NR_truncate, path, length );
+	int rez = syscall(__NR_truncate, path, length);
 	if( rez < 0 )
 	{
 		errno = -rez;

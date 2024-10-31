@@ -46,7 +46,9 @@ void free(void *ptr)
 {
 	/* TODO: Implement free(). */
 	if (ptr == NULL)
+	{
         return;
+	}
     struct mem_list *item = mem_list_find(ptr);
     if (item != NULL) {
         mem_list_del(ptr);
@@ -57,7 +59,6 @@ void free(void *ptr)
 void *realloc(void *ptr, size_t size)
 {
 	/* TODO: Implement realloc(). */
-	
 	return NULL;
 }
 

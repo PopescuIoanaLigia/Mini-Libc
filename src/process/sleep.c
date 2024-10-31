@@ -7,7 +7,6 @@
 unsigned int sleep(unsigned int seconds) {
     struct timespec req = { seconds, 0 };
     struct timespec rem = { 0, 0 };
-    
     while (nanosleep(&req, &rem) == -1 && rem.tv_sec > 0) {
         req = rem;
     }
