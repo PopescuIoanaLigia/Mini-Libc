@@ -179,3 +179,10 @@ Thumbs.db
 
 #Extra file
 img/
+.checkpatch.conf
+.gitlab-ci.yml
+.shellcheckrc
+CPPLINT.cfg
+Dockerfile
+README.checker.md
+local.sh
